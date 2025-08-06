@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8506D4642E430EC20053FFC6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AB435B2E43098F001C98FA /* WidgetKit.framework */; };
+		8506D4652E430EC20053FFC6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AB435D2E43098F001C98FA /* SwiftUI.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F69E0DC02E41B2DA00F53D46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,13 +28,52 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		85AB436D2E430990001C98FA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8506D4632E430EC20053FFC6 /* WeatherismWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeatherismWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		85AB435B2E43098F001C98FA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		85AB435D2E43098F001C98FA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		F69E0DAE2E41B2D900F53D46 /* WeatherismApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherismApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69E0DBF2E41B2DA00F53D46 /* WeatherismAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherismAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69E0DC92E41B2DA00F53D46 /* WeatherismAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherismAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8506D4712E430EC30053FFC6 /* Exceptions for "WeatherismWidget" folder in "WeatherismWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8506D4622E430EC20053FFC6 /* WeatherismWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8506D4662E430EC20053FFC6 /* WeatherismWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8506D4712E430EC30053FFC6 /* Exceptions for "WeatherismWidget" folder in "WeatherismWidgetExtension" target */,
+			);
+			path = WeatherismWidget;
+			sourceTree = "<group>";
+		};
+		85AB435F2E43098F001C98FA /* WeatherismWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WeatherismWidget;
+			sourceTree = "<group>";
+		};
 		F69E0DB02E41B2D900F53D46 /* WeatherismApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WeatherismApp;
@@ -48,6 +92,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8506D4602E430EC20053FFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8506D4652E430EC20053FFC6 /* SwiftUI.framework in Frameworks */,
+				8506D4642E430EC20053FFC6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F69E0DAB2E41B2D900F53D46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +125,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85AB435A2E43098F001C98FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85AB435B2E43098F001C98FA /* WidgetKit.framework */,
+				85AB435D2E43098F001C98FA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F69E0DA52E41B2D900F53D46 = {
 			isa = PBXGroup;
 			children = (
 				F69E0DB02E41B2D900F53D46 /* WeatherismApp */,
 				F69E0DC22E41B2DA00F53D46 /* WeatherismAppTests */,
 				F69E0DCC2E41B2DA00F53D46 /* WeatherismAppUITests */,
+				85AB435F2E43098F001C98FA /* WeatherismWidget */,
+				8506D4662E430EC20053FFC6 /* WeatherismWidget */,
+				85AB435A2E43098F001C98FA /* Frameworks */,
 				F69E0DAF2E41B2D900F53D46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +153,7 @@
 				F69E0DAE2E41B2D900F53D46 /* WeatherismApp.app */,
 				F69E0DBF2E41B2DA00F53D46 /* WeatherismAppTests.xctest */,
 				F69E0DC92E41B2DA00F53D46 /* WeatherismAppUITests.xctest */,
+				8506D4632E430EC20053FFC6 /* WeatherismWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +161,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8506D4622E430EC20053FFC6 /* WeatherismWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8506D4722E430EC30053FFC6 /* Build configuration list for PBXNativeTarget "WeatherismWidgetExtension" */;
+			buildPhases = (
+				8506D45F2E430EC20053FFC6 /* Sources */,
+				8506D4602E430EC20053FFC6 /* Frameworks */,
+				8506D4612E430EC20053FFC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8506D4662E430EC20053FFC6 /* WeatherismWidget */,
+			);
+			name = WeatherismWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = WeatherismWidgetExtension;
+			productReference = 8506D4632E430EC20053FFC6 /* WeatherismWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F69E0DAD2E41B2D900F53D46 /* WeatherismApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F69E0DD32E41B2DA00F53D46 /* Build configuration list for PBXNativeTarget "WeatherismApp" */;
@@ -102,6 +190,7 @@
 				F69E0DAA2E41B2D900F53D46 /* Sources */,
 				F69E0DAB2E41B2D900F53D46 /* Frameworks */,
 				F69E0DAC2E41B2D900F53D46 /* Resources */,
+				85AB436D2E430990001C98FA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -170,9 +259,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					8506D4622E430EC20053FFC6 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					F69E0DAD2E41B2D900F53D46 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -203,11 +295,19 @@
 				F69E0DAD2E41B2D900F53D46 /* WeatherismApp */,
 				F69E0DBE2E41B2DA00F53D46 /* WeatherismAppTests */,
 				F69E0DC82E41B2DA00F53D46 /* WeatherismAppUITests */,
+				8506D4622E430EC20053FFC6 /* WeatherismWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8506D4612E430EC20053FFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F69E0DAC2E41B2D900F53D46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +332,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8506D45F2E430EC20053FFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F69E0DAA2E41B2D900F53D46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +376,76 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8506D4732E430EC30053FFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WeatherismWidget/WeatherismWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7HM5SFDUV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherismWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherismWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ammarsufyan.WeatherismWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8506D4742E430EC30053FFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WeatherismWidget/WeatherismWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7HM5SFDUV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherismWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherismWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ammarsufyan.WeatherismWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		F69E0DD12E41B2DA00F53D46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +480,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -364,6 +542,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -389,11 +568,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WeatherismApp/WeatherismApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherismApp/Preview Content\"";
+				DEVELOPMENT_TEAM = X7HM5SFDUV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This widget uses your location to provide current weather information for your area.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -409,13 +592,15 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weather.WeatherismApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ammarsufyan.Weatherism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -426,11 +611,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WeatherismApp/WeatherismApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherismApp/Preview Content\"";
+				DEVELOPMENT_TEAM = X7HM5SFDUV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This widget uses your location to provide current weather information for your area.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -446,13 +635,15 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weather.WeatherismApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ammarsufyan.Weatherism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -463,6 +654,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -485,6 +677,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -506,6 +699,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -527,6 +721,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -546,6 +741,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8506D4722E430EC30053FFC6 /* Build configuration list for PBXNativeTarget "WeatherismWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8506D4732E430EC30053FFC6 /* Debug */,
+				8506D4742E430EC30053FFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F69E0DA92E41B2D900F53D46 /* Build configuration list for PBXProject "WeatherismApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
