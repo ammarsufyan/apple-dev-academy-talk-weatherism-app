@@ -69,11 +69,6 @@
 			path = WeatherismWidget;
 			sourceTree = "<group>";
 		};
-		85AB435F2E43098F001C98FA /* WeatherismWidget */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherismWidget;
-			sourceTree = "<group>";
-		};
 		F69E0DB02E41B2D900F53D46 /* WeatherismApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WeatherismApp;
@@ -140,7 +135,6 @@
 				F69E0DB02E41B2D900F53D46 /* WeatherismApp */,
 				F69E0DC22E41B2DA00F53D46 /* WeatherismAppTests */,
 				F69E0DCC2E41B2DA00F53D46 /* WeatherismAppUITests */,
-				85AB435F2E43098F001C98FA /* WeatherismWidget */,
 				8506D4662E430EC20053FFC6 /* WeatherismWidget */,
 				85AB435A2E43098F001C98FA /* Frameworks */,
 				F69E0DAF2E41B2D900F53D46 /* Products */,
